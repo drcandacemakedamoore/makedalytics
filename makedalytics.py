@@ -13,16 +13,14 @@ def remind_ds_libraries():
 
 def understand_df(df):
 
-    print("The table has x entries with y data points- x,y here are:", df.shape)
+    print("The dataframe has", len(df.columns), "columns, named", df.columns )
     print("")
     print("The dataframe has", len(df), "rows")
     print("")
-    print("The dataframe has", len(df.columns), "columns, named", df.columns )
-    print("")
-    print("In terms of nulls, the dataframe has: \n", df.isnull().sum())
+    print("In terms of nulls, the dataframe has: \n", df.isnull().sum(), ".")
     print("")
     print("Number of duplicated rows in the data is: \n",  df.duplicated().sum(), ".")
-     print("")
+    print("")
     print("The types of data:\n", df.dtypes)
     print("")
     print("Numeric qualities of numeric data: \n", df.describe()) 
@@ -38,10 +36,7 @@ def show_duplicates(df):
 
 
 def create_matrix(width, height, default_element):
-    '''
-    Helper function to create matrices `width' x `height' big
-    filled initially with `default_element'
-    '''
+  
     # In python Sequence * Number = Sequence repeated Number of times
     result = [0] * width
 
@@ -88,3 +83,6 @@ def pristine(df,axis_to_zap, modify_index):
         df = df.dropna(axis = axis_to_zap, inplace = False)
         df.drop_duplicates(inplace=True)
     return df
+
+def print1():
+    print("1")
