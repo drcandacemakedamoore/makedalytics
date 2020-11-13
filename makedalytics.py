@@ -21,7 +21,7 @@ def understand_df(df):
     print("")
     print("In terms of nulls, the dataframe has: \n", df.isnull().sum())
     print("")
-    print("Number of duplicated rows in the data is: \n",  df[df.duplicated()].count(), ".")
+    print("Number of duplicated rows in the data is: \n",  df.duplicated().sum(), ".")
      print("")
     print("The types of data:\n", df.dtypes)
     print("")
@@ -30,9 +30,11 @@ def understand_df(df):
     
 def show_duplicates(df):
     if df.duplicated().any():
-        print("This table has duplicated rows, so let me show them", df.duplicated())
+        print("This table has", df.duplicated().sum()," duplicated rows")
+        print("They are: \n", df[df.duplicated()])
     else:
         print("There are no duplicated rows")   
+
 
 def create_matrix(width, height, default_element):
     '''
