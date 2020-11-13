@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="makedalytics",
-    version='0.0.5',
+    version='0.0.6',
     description="Python library to simpify data analytics",
     author='doctormakeda@gmail.com',
     author_email='doctormakeda@gmail.com',
@@ -11,6 +11,6 @@ setup(
     url="https://github.com/drcandacemakedamoore/makedalytics/blob/master/",
     license="MIT",
     py_modules=["makedalytics"],
-    requires=["pip"]
+    install_requires=["pip"]
     
 )
