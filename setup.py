@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="makedalytics",
-    version='0.0.4',
+    version='0.0.5',
     description="Python library to simpify data analytics",
     author='doctormakeda@gmail.com',
     author_email='doctormakeda@gmail.com',

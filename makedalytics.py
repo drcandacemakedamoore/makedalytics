@@ -17,11 +17,11 @@ def understand_df(df):
     print("")
     print("The dataframe has", len(df), "rows")
     print("")
-    print("In terms of nulls, the dataframe has: \n", df.isnull().sum(), ".")
-    print("")
-    print("Number of duplicated rows in the data is: \n",  df.duplicated().sum(), ".")
-    print("")
     print("The types of data:\n", df.dtypes)
+    print("")
+    print("In terms of nulls, the dataframe has: \n", df[df.isnull()].count())
+    print("")
+    print("Number of duplicated rows in the data is ",  df.duplicated().sum(), ".")
     print("")
     print("Numeric qualities of numeric data: \n", df.describe()) 
     
@@ -84,5 +84,5 @@ def pristine(df,axis_to_zap, modify_index):
         df.drop_duplicates(inplace=True)
     return df
 
-def print1():
-    print("1")
+def print2():
+    print("2")
