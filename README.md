@@ -31,4 +31,4 @@ pristine(df,axis_to_zap, modify_index):
     Returns a cleaned dataframe without columns or rows that have nulls.
 
 wordish_count(str):
-    counts split up elements of a string. In the case ofan English sentance that is a word count with some counting of certain punctuation.
+    counts split up elements of a string. In the case ofan English sentance that is a count for each word with some counting of certain punctuation.
