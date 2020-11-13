@@ -21,11 +21,12 @@ def understand_df(df):
     print("")
     print("In terms of nulls, the dataframe has: \n", df.isnull().sum())
     print("")
-    print("Number of duplicated rows in the data is: \n",  df[df.duplicated()].sum(), ".")
+    print("Number of duplicated rows in the data is: \n",  df[df.duplicated()].count(), ".")
+     print("")
     print("The types of data:\n", df.dtypes)
     print("")
     print("Numeric qualities of numeric data: \n", df.describe()) 
-    print("The table has x entries with y data points- x,y here are:", df.shape)
+    
     
 def show_duplicates(df):
     if df.duplicated().any():
