@@ -1,6 +1,5 @@
 # makedalytics
-A python library for data analytics on data including text and/or images with an emphasis on scientific reproducibility. 
-makedalytics has the following functions: 
+A python library for data analytics on data including text and/or images with an emphasis on scientific reproducibility. Please note the library is currently evolving, and I am testing new functions. At present the tested functional functions ofmakedalytics are the following: 
 
 remind_ds_libraries():
   This function takes no argyments and reminds what libraries you may want to import by printing them.
