@@ -1,7 +1,6 @@
 # makedalytics
-Python library for data analytics
-
-This is a library with functions for data anaylytics. It has the following functions: 
+A python library for data analytics on data including text and/or images with an emphasis on scientific reproducibility. 
+makedalytics has the following functions: 
 
 remind_ds_libraries():
   This function takes no argyments and reminds what libraries you may want to import by printing them.
