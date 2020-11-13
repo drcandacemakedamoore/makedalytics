@@ -77,15 +77,10 @@ def packages_to():
 
 
 def pristine(df,axis_to_zap, modify_index):
-    if modify_index == False:# if true reset in place, if false don't
+    if modify_index == False:  # if true reset in place, if false don't
         df = df.dropna(axis = axis_to_zap, inplace = False).reset_index()
         df.drop_duplicates(inplace=True)
     else: 
-                df = df.dropna(axis = axis_to_zap, inplace = False)
-                df.drop_duplicates(inplace=True)
-            
-<<<<<<< HEAD
-    return df   
-=======
-    return df    
->>>>>>> Overwritte all previous changes
+        df = df.dropna(axis = axis_to_zap, inplace = False)
+        df.drop_duplicates(inplace=True)
+    return df
