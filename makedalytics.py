@@ -1,3 +1,9 @@
+import platform
+try:
+    from pip._internal.operations import freeze
+except ImportError:  # pip < 10.0
+    from pip.operations import freeze
+
 def remind_ds_libraries():
     print ("Basics: \n import pandas as pd\n import numpy as np\n import matplotlib \n import matplotlib.pyplot as plt\n")
     print("Visualization:\n from IPython.display import Markdown, display \n from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot\n import plotly.graph_objs as go\n import seaborn as sns")
@@ -52,29 +58,30 @@ def tag_text(text, column):
 def biopsy_df(start_row,end_row,column, df):
     range_rows = range(start_row,end_row) 
     finds = df.loc[range_rows]
-    return finds[column]    
+    return finds[column]
 
 
-def find_my_packages():
-    
-    import platform
-    
+def packages_to():
     platform_sys = platform.system()
     release = platform.release()
+
     print("System Platform:", platform_sys, release)
     print("Packages:") 
-    !! pip freeze > requirements_for_running.txt
-    f = open("requirements_for_running.txt", "r")
-    print(f.read()) 
-    return f
+    x = freeze.freeze()
+
+    with open("requirementscontext.txt", 'w') as f:
+        for p in x:
+            print(p)
+            f.write(str(p))
+            f.write('\n')
 
 
 def pristine(df,axis_to_zap, modify_index):
-    if modify_index == False:# if true reset in place, if false don't
+    if modify_index == True:# if true reset in place, if false don't
         df = df.dropna(axis = axis_to_zap, inplace = False).reset_index()
         df.drop_duplicates(inplace=True)
     else: 
                 df = df.dropna(axis = axis_to_zap, inplace = False)
                 df.drop_duplicates(inplace=True)
             
-    return df    
+    return df   
