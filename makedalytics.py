@@ -36,6 +36,7 @@ def show_duplicates(df):
         print("There are no duplicated rows")   
 
 
+
 def create_matrix(width, height, default_element):
     '''
     Helper function to create matrices `width' x `height' big
