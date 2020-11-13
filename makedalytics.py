@@ -86,3 +86,16 @@ def pristine(df,axis_to_zap, modify_index):
 
 def print2():
     print("2")
+
+
+def wordish_count(str):
+    counts = dict()
+    words_here = str.split()
+    
+    for word in words_here:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts    
