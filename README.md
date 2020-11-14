@@ -7,7 +7,7 @@ remind_ds_libraries():
   This function takes no arguments and reminds what libraries you may want to import by printing them.
   
 packages_to():
-   This function takes no arguments and displays what your system and packages are.  
+   This function takes no arguments and displays what your system and packages are, and writes them to a file called "requirementscontext.txt"  
 
 biopsy_df(start_row,end_row,column, df):
     Function takes arguments of starting row (start row), end row and column or [columns] listed in []. Returns only specified area of dataframe.
