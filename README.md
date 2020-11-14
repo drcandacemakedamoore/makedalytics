@@ -4,13 +4,13 @@ A python library for data analytics on data including text and/or images with an
 ## general functions
 
 remind_ds_libraries():
-  This function takes no argyments and reminds what libraries you may want to import by printing them.
+  This function takes no arguments and reminds what libraries you may want to import by printing them.
   
 packages_to():
-    Tells you what your system and packages are.  
+   This function takes no arguments and displays what your system and packages are.  
 
 biopsy_df(start_row,end_row,column, df):
-    Returns only specified area of dataframe
+    Function takes arguments of starting row (start row), end row and column. Returns only specified area of dataframe
     
 understand_df(df):
   This function takes the dataframe as an argument, and produces information on number of columns, rows, data types, existance of nulls etc.
@@ -28,7 +28,7 @@ tag_text(text, column):
     Shows you where (what row) certain text is in a columns. Works like nuclear medicine tagging. 
 
 wordish_count(str):
-    counts split up elements of a string. In the case ofan English sentance that is a count for each word with some counting of certain punctuation.
+    Counts split up elements of a string. In the case ofan English sentance that is a count for each word with some counting of certain punctuation.
 
 ## image related functions   
 
