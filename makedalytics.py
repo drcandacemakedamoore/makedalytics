@@ -99,3 +99,16 @@ def wordish_count(str):
             counts[word] = 1
 
     return counts    
+
+def check_requirements(test2list):
+    
+    actual_specs = set(str(s) for s in freeze.freeze())
+    given_specs = set(str(s) for s in test2list)
+    
+    missing = given_specs - actual_specs
+    print("Note that even if you have all the required packages, your other packages may effect the running of code.")
+    
+    print("Note that if you want to see all your packages you can run makedaytics.packages_to()")
+    print('Missing packages:')
+    for s in missing:
+        print('  {}'.format(s))    
