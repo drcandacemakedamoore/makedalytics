@@ -10,7 +10,7 @@ packages_to():
    This function takes no arguments and displays what your system and packages are.  
 
 biopsy_df(start_row,end_row,column, df):
-    Function takes arguments of starting row (start row), end row and column. Returns only specified area of dataframe
+    Function takes arguments of starting row (start row), end row and column or [columns] listed in []. Returns only specified area of dataframe.
     
 understand_df(df):
   This function takes the dataframe as an argument, and produces information on number of columns, rows, data types, existance of nulls etc.
