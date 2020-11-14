@@ -32,7 +32,7 @@ tag_text(text, column):
     Shows you where (what row) certain text is in a columns. Works like nuclear medicine tagging. 
 
 wordish_count(str):
-    Counts split up elements of a string. In the case ofan English sentance that is a count for each word with some counting of certain punctuation.
+    Counts split up elements of a string. In the case ofan English sentance that is a count for each word with some counting of certain punctuation..
 
 ## image related functions   
 
