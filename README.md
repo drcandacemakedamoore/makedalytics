@@ -8,6 +8,10 @@ remind_ds_libraries():
   
 packages_to():
    This function takes no arguments and displays what your system and packages are, and writes them to a file called "requirementscontext.txt"  
+   
+def check_requirements(test2list):   
+    Function takes arguments of a list e.g. ['absl-py==0.7.0','aiofiles==0.4.0','altair==4.1.1'] of packages you will have as requirements as test2list. 
+    Returns which you are missing in your machine environment. Missing may be a difference of version number. 
 
 biopsy_df(start_row,end_row,column, df):
     Function takes arguments of starting row (start row), end row and column or [columns] listed in []. Returns only specified area of dataframe.
