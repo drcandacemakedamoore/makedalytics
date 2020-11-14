@@ -1,5 +1,5 @@
 # makedalytics
-A python library for data analytics on data including text and/or images with an emphasis on scientific reproducibility. Please note the library is currently evolving, and I am testing new functions. At present the tested functional functions of makedalytics are the following: 
+A python library for data analytics on data including text and/or images with an emphasis on scientific reproducibility. There is only a dependancy on pip (although some versions of pip may have dependancies). Please note the library is currently evolving, and I am testing new functions.  At present the tested functional functions of makedalytics are the following: 
 
 ## general functions
 
